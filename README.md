@@ -1,24 +1,25 @@
-# Drum Machine :drum:
+<div align="center"> # Drum Machine :drum: </div>
 
 Play the drums :drum: :sparkling_heart: !(Web app)
 
 ## :label: Features :100: 
 - [x] Press the key from keymap will play the sound
-- [x] Display will show the pads
+- [x] Display the bank pads
 - [ ] Power button
 - [ ] Volume control
 
 ## :label: Tech Stack
 1. ReactJS
 2. Redux
-3. Sass (css preprocessor)
+3. Sass
 
-## To Run Locally
-- >Make sure you've **NodeJS** installed. If not [click me](https://nodejs.org) to go to nodejs!
+## :label: To Run Locally
+- >Make sure you've **node** installed. If not [click me](https://nodejs.org) to go to nodejs!
 
 - >Install [yarn](https://classic.yarnpkg.com/en/) (if you don't have already)
 
 - >Clone the repository
+	
 	:heavy_check_mark: ```git clone https://github.com/subhadipghs/drum-machine.git```
 	
 	:heavy_check_mark: Open terminal/cmd and run ``` yarn start ```
