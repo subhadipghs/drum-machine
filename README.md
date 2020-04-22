@@ -1,4 +1,5 @@
-<h1 align="center">Drum Machine :drum:<h1>
+<h1 align="center">Drum Machine :drum:</h1>
+
 Play the drums :drum: :sparkling_heart: !(Web app)
 
 ## :label: Features :100: 
@@ -21,6 +22,8 @@ Play the drums :drum: :sparkling_heart: !(Web app)
 	
 	:heavy_check_mark: ```git clone https://github.com/subhadipghs/drum-machine.git```
 	
+	:heavy_check_mark: Install all the dependencies . Open terminal/cmd and run ``` yarn install ```
+
 	:heavy_check_mark: Open terminal/cmd and run ``` yarn start ```
 
 	:heavy_check_mark:  Open browser and go to *```localhost:3000```* :rocket:
