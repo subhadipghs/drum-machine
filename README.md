@@ -24,4 +24,4 @@ Play the drums :drum: :sparkling_heart: !(Web app)
 	
 	:heavy_check_mark: Open terminal/cmd and run ``` yarn start ```
 
-	:heavy_check_mark:  Open browser and go to ```*localhost:3000*``` :rocket:
+	:heavy_check_mark:  Open browser and go to *```localhost:3000```* :rocket:
