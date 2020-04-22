@@ -1,4 +1,4 @@
-<div align="center"> # Drum Machine :drum: </div>
+<div align="center"> <h1>Drum Machine :drum:<h1> </div>
 
 Play the drums :drum: :sparkling_heart: !(Web app)
 
