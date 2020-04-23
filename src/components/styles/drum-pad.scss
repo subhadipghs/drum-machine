@@ -1,5 +1,4 @@
 
-$theme-color: #f06;
 $text-color: #fef;
 
 @mixin flex($jc, $ai) {
@@ -18,9 +17,7 @@ $text-color: #fef;
 	@include flex(center, center);
 	width: 100px;
 	height: 100px;
-	background-color: #f39;
 	color: $text-color;
-	box-shadow: 0px 0px 15px #f39;
 	margin: 4px;
 	text-align: center;
 	border-radius: 10px;

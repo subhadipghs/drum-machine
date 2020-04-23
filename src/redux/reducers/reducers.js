@@ -1,7 +1,7 @@
 import {VOLUME, POWER, PADBANK, BOX_DISPLAY } from '../actions/actionTypes';
 
 const initialState = {
-	volume: 100,
+	volume: 50,
 	box_display: '',
 	power: true,
 	bank: 'one'
@@ -11,25 +11,13 @@ const initialState = {
 export default function reducers(state = initialState, action) {
 	switch(action.type) {
 		case VOLUME: 
-			return [
-				...state,
-				{ volume: action.volume }
-			];
+			return Object.assign({}, state, {volume: action.volume});
 		case POWER:
-			return [
-				...state,
-				{ power: action.power }
-			];
+			return Object.assign({}, state, {power: action.power});
 		case PADBANK:
-			return [
-				...state,
-				{ bank: action.bank }
-			];
+			return Object.assign({}, state, {bank: action.padbank});
 		case BOX_DISPLAY:
-			return [
-				...state,
-				{ box_display: action.box_display } 
-			];
+			return Object.assign({}, state, {box_display: action.box_display});
 		default: 
 			return state;
 	}

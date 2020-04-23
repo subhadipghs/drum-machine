@@ -1,12 +1,13 @@
-<h1 align="center">Drum Machine :drum:</h1>
+<h1 align="center">Drum Machine</h1>
 
 Play the drums :drum: :sparkling_heart: !(Web app)
 
 ## :label: Features :100: 
 - [x] Press the key from keymap will play the sound
 - [x] Display the bank pads
+- [x] Volume control
 - [ ] Power button
-- [ ] Volume control
+- [ ] Demo Play
 
 ## :label: Tech Stack
 1. ReactJS

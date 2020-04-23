@@ -14,8 +14,6 @@
 #drum-machine {
 	box-sizing: border-box;
 	@include flex;
-	width: 50vh;
-	height: 50vh;
 	margin: 7px;
 	border: 2px solid #f39;
 	border-radius: 10px;

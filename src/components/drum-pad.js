@@ -2,39 +2,43 @@ import React from "react";
 import "./styles/drum-pad.scss";
 
 
+import { connect } from "react-redux";
+import { change_power } from "../redux/actions/power";
+import { change_volume } from "../redux/actions/volume";
+import { change_display } from "../redux/actions/box-display";
+import { change_padbank } from "../redux/actions/banks";
+
 class DrumPad extends React.Component {
 	constructor(props) {
 		super(props);
-
 		this.state = {
 			background: '#f349'
 		};
-
 		this.audioRef = React.createRef();
 		this.play = this.play.bind(this);
 		this.handleKeyPress = this.handleKeyPress.bind(this);
 	}
 
 	componentWillMount() {
-		const colors = ['#f39', '#652ec7', '#3b27ba'];
+		const colors = ['#f39', '#02b8a2', '#3b27ba'];
 		var index = Math.floor(Math.random()*3);
 		this.setState({
 			background: colors[index]
 		});
 	}
-
-
 	componentDidMount() {
 		document.addEventListener("keydown", this.handleKeyPress);
+		console.log(this.props);
 	}
-
 	componentWillUnmount() {
 		document.removeEventListener("keydown", this.handleKeyPress);
 	}
 
 	play() {		
 		if (this.props.power) {
+			this.audioRef.volume = parseFloat(this.props.volume/100);
 			this.audioRef.play();
+			this.props.change_display({type: 'BOX_DISPLAY', box_display: this.props.name});
 		}
 	}
 	
@@ -61,4 +65,35 @@ class DrumPad extends React.Component {
 		);
 	}
 }
-export default DrumPad;
+
+
+
+const mapStateToProps = (state) => {
+	return {
+		power: state.power,
+		bank: state.bank,
+		box_display: state.box_display,
+		volume: state.volume,
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+		change_power: (state) => {
+			dispatch(change_power(state.power));
+		},
+		change_volume: (state) => {
+			dispatch(change_volume(state.volume));
+		},
+		change_display: (state) => {
+			dispatch(change_display(state.box_display));
+		},
+		change_bank: (state) => {
+			dispatch(change_padbank(state.bank));
+		},
+	};
+};
+const DrumPads = connect(mapStateToProps, mapDispatchToProps)(DrumPad);
+
+
+export default DrumPads;

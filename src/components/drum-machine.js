@@ -1,5 +1,5 @@
 import React from "react";
-import DrumPad  from "./drum-pad";
+import DrumPads  from "./drum-pad";
 import './styles/drum-machine.scss';
 import { bankOne, bankTwo } from "../constants/audio";
 
@@ -11,8 +11,9 @@ class DrumMachine extends React.Component {
 					(this.props.bank === 'one')
 					? bankOne.map((bank, index) => {
 						return (
-							<DrumPad
-								key={index}
+							<DrumPads
+								name={bank.id}
+								key={bank.id}
 								src={bank.url}
 								keyCode={bank.keyCode}
 								power={this.props.power}
@@ -24,9 +25,10 @@ class DrumMachine extends React.Component {
 					  })
 					: bankTwo.map((bank, index) => {
 							return (
-								<DrumPad
+								<DrumPads
 									key={index}
 									keyCode={bank.keyCode}
+									name={bank.id}
 									src={bank.url}
 									power={this.props.power}
 									id={bank.keyTrigger}
@@ -41,4 +43,4 @@ class DrumMachine extends React.Component {
 	}
 }
 
-export default DrumMachine;
+export default DrumMachine;	
