@@ -49,4 +49,4 @@ const mapDispatchToProps = (dispatch) => {
 const VolumeContainer = connect(mapStateToProps, mapDispatchToProps)(Volume);
 
 
-export default VolumeContainer;x``
+export default VolumeContainer;

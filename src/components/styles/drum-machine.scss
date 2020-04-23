@@ -18,9 +18,9 @@
 	border: 2px solid #f39;
 	border-radius: 10px;
 	flex-wrap: wrap;
-	& .pads {
-		flex: 0 0 31%;
-	}
+	// & .pads {
+	// 	flex: 0 0 31%;
+	// }
 }
 @media (max-width: 650px) {
 	min-width: 50vh;

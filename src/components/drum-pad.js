@@ -19,16 +19,17 @@ class DrumPad extends React.Component {
 		this.handleKeyPress = this.handleKeyPress.bind(this);
 	}
 
+
 	componentWillMount() {
-		const colors = ['#f39', '#02b8a2', '#3b27ba'];
+		const colors = ['#f39', '#3b27ba', '#13ca91'];
 		var index = Math.floor(Math.random()*3);
 		this.setState({
 			background: colors[index]
 		});
 	}
+
 	componentDidMount() {
 		document.addEventListener("keydown", this.handleKeyPress);
-		console.log(this.props);
 	}
 	componentWillUnmount() {
 		document.removeEventListener("keydown", this.handleKeyPress);

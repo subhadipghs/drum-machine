@@ -2,6 +2,11 @@
 
 Play the drums :drum: :sparkling_heart: !(Web app)
 
+## Preview 
+
+ ![Image of Drum Machine](preview.gif)
+
+
 ## :label: Features :100: 
 - [x] Press the key from keymap will play the sound
 - [x] Display the bank pads
@@ -19,7 +24,7 @@ Play the drums :drum: :sparkling_heart: !(Web app)
 
 - >Install [yarn](https://classic.yarnpkg.com/en/) (if you don't have already)
 
-- >Clone the repository
+- >Clone the repository	
 	
 	:heavy_check_mark: ```git clone https://github.com/subhadipghs/drum-machine.git```
 	
