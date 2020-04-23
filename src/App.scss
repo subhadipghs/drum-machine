@@ -40,31 +40,21 @@ $background-color: #101;
 	color: #f39 ;
 	width: 100vw;
 	flex-direction: column;
-	font-size: 3em;
-	transition: 0.5s;
+	font-size: 4em;
 	padding: 10px;
 	font-weight: bolder;
-	&:nth-child(1) {
-		color: #fff;
-		animation: neon1 1.5s ease-in-out infinite alternate;
-	}
 }
 
 .App-body {
 	@include flex(center, center);
 	font-family:  sans-serif !important;
 	flex-direction: column;
-	height: 88vh;
 	margin: 0 auto;
 	text-align: center;
 }
 
-// @keyframes neon1 {
-//   from {
-//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
-//   }
-//   to {
-//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
-//   }
-// }
-
+@media (min-width: 650px) {
+	.App-body {
+		height: 90vh;
+	}
+}

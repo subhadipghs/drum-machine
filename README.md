@@ -4,7 +4,7 @@ Play the drums :drum: :sparkling_heart: !(Web app)
 
 ## Preview 
 
- ![Image of Drum Machine](preview.gif)
+ ![Image of Drum Machine](preview.jpg)
 
 
 ## :label: Features :100: 
